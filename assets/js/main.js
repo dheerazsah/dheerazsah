@@ -71,7 +71,7 @@ tabs.forEach(tab =>{
 /*==================== SERVICES MODAL ====================*/
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== BLOGS SWIPER  ====================*/
 let swiper = new Swiper('.blogs__container', {
     cssMode: true,
     loop: true,
