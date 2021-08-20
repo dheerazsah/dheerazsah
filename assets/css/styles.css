@@ -639,7 +639,7 @@ home__subtitle{
 
 
 /*==================== BLOGS ====================*/
-blogs__container{
+.blogs__container{
     overflow: initial;
 }
 
