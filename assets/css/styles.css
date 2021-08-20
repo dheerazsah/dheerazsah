@@ -181,6 +181,7 @@ img{
     max-width: 968px;
     height: var(--header-height);
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -203,7 +204,7 @@ img{
     color: var(--first-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
     .nav__menu{
         position: fixed;
         bottom: -100%;
@@ -270,7 +271,8 @@ img{
 
 /*==================== HOME ====================*/
 .home__container{
-    padding: 1rem;
+    gap: 1rem;
+    /* padding: 10rem; */
 }
 
 .home__content{
@@ -370,10 +372,21 @@ home__subtitle{
     transition: .3s;
 }
 
+.button--white{
+    background-color: #FFF;
+    color: var(--first-color);
+}
+
+
+.button--white:hover{
+    background-color: #FFF;
+}
+
 .button--flex{
     display: inline-flex;
     align-items: center;
 }
+
 
 /*==================== ABOUT ====================*/
 
@@ -625,10 +638,90 @@ home__subtitle{
 /* Active Modal */
 
 
-/*==================== PORTFOLIO ====================*/
+/*==================== BLOGS ====================*/
+blogs__container{
+    overflow: initial;
+}
 
+.blogs__content{
+    padding: 0 1.5rem;
+}
 
-/*==================== PROJECT IN MIND ====================*/
+.blogs__img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.blogs__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.blogs__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.blogs__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-blogs-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -.5rem;
+}
+
+.swiper-button-next{
+    right: -.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -.3rem;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+    outline: none;
+}
+
+/*==================== WORK TOGETHER ====================*/
+.worktogether{
+    text-align: center;
+}
+
+.worktogether__bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.worktogether__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.worktogether__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.worktogether__title,
+.worktogether__description{
+    color: #FFF;
+}
 
 
 /*==================== TESTIMONIAL ====================*/
@@ -835,12 +928,10 @@ home__subtitle{
         order: 1;
         justify-self: center;
     }
-
-    /* .about__container,
-       .portfolio__container
-       .project__container */
-       .skills__container
-       .contact__container
+       
+       .blogs__container,
+       .skills__container,
+       .worktogether__container,
        .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -944,9 +1035,39 @@ home__subtitle{
         grid-template-columns: .5fr;
     }
 
+    .blogs__img{
+        width: 320px;
+    }
+
+    .blogs__content{
+        align-items: center;
+    }
+
+    .worktogether{
+        text-align: initial;
+    }
+
+    .worktogether__bg{
+        background: none;
+    }
+
+    .worktogether__container{
+        background-color: var(--first-color-second);
+        border-radius: 1rem;
+        padding: 3rem 2.5rem 0;
+        grid-template-columns: 1fr max-content;
+        column-gap: 3rem;
+    }
+
+    .worktogether__data{
+        padding-top: .8rem;
+        padding-bottom: 3rem;
+    }
+
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
     }
+
     .footer__bg{
         padding: 3rem 0 3.5rem;
     }
@@ -970,11 +1091,19 @@ home__subtitle{
         padding: 0;
     }
 
+    .home__container{
+        gap: 1rem;
+    }
+
     .home__blob{
         width: 320px;
     }
     .home__socials{
         transform: translateX(-6rem);
+    }
+
+    .blogs__container{
+        column-gap: 5rem;
     }
 
     .contact__form{
