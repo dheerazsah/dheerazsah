@@ -6,7 +6,7 @@ const navMenu = document.getElementById('nav-menu'),
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
-    navToggle.addEventListener('click',() =>{
+    navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
     })
 }
@@ -14,8 +14,8 @@ if(navToggle){
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
-    navClose.addEventListener('click',() =>{
-        navMenu.classList.add('show-menu')
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
     })
 }
 
@@ -72,7 +72,19 @@ tabs.forEach(tab =>{
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper('.blogs__container', {
+    cssMode: true,
+    loop: true,
 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
 
 /*==================== TESTIMONIAL ====================*/
 
