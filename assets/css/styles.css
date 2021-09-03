@@ -7,11 +7,11 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 41 ; /*Yellow 41 - Purple 250 - Blue 230 - Pink 340*/
+    --hue-color: 99 ; /*Yellow 41 - Purple 250 - Blue 230 - Pink 340 - Green 99*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 85%, 59%);
-    --first-color-second: hsl(var(--hue-color), 85%, 59%);
+    --first-color: hsl(var(--hue-color), 62%, 56%); /*85%, 59%*/
+    --first-color-second: hsl(var(--hue-color), 62%, 56%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
