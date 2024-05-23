@@ -16,6 +16,8 @@ Here are some ideas to get you started:
 -->
 
  <!-- ![](https://github-readme-stats.vercel.app/api?username=dheerazsah&theme=nord&hide_border=true&include_all_commits=true&count_private=true)<br/> -->
+[![committers.top badge](https://user-badge.committers.top/nepal/USERNAME.svg)](https://user-badge.committers.top/nepal/USERNAME)
+
 ![](https://github-readme-streak-stats.herokuapp.com/?user=dheerazsah&theme=nord&hide_border=true)<br/>
  ![](https://github-readme-stats.vercel.app/api/top-langs/?username=dheerazsah&theme=nord&hide_border=true&include_all_commits=true&count_private=true&layout=compact)  
 
